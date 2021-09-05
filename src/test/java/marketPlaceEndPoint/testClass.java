@@ -29,7 +29,6 @@ public class testClass {
                 .get(readFileTestResources("URL")).then()
                 .statusCode(HttpStatus.SC_OK)
                 .extract().response();
-        System.out.println(response.asPrettyString());
         ResponseValidations.validateResponseStructure(response);
         ResponseValidations.CheckNumberOfShipmentsReturned(response, 3);
         ResponseValidations.validateResponseFields(response);

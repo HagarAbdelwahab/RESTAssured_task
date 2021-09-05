@@ -12,7 +12,7 @@ public class ResponseValidations {
     private static JSONParser parser = new JSONParser();
     private static final SoftAssert softAssertion = new SoftAssert();
 
-    /*
+    /**
      *This method is to validate the response structure that it contains all the necessary fields
      * @param response: service response
      */
@@ -38,7 +38,7 @@ public class ResponseValidations {
         softAssertion.assertAll();
     }
 
-    /*
+    /**
      *This method is to validate that all response fields have values
      * @param response: service response
      */
@@ -64,7 +64,7 @@ public class ResponseValidations {
         softAssertion.assertAll();
     }
 
-    /*
+    /**
      *This method is to validate the response has the expected number of shipments
      * @param response: service response
      * @param numberOfShipments: number of shipments returned from api

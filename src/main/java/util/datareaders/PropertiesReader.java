@@ -22,7 +22,7 @@ public class PropertiesReader {
     }
 
 
-    //get value with the key name
+
     public static String getPropertyValue(String propertyName) {
         return properties.getProperty(propertyName);
 
